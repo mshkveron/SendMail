@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Расчет стоимости</title>
+    <link rel= "stylesheet" href = "page4.css">
+    <!-- <link rel="stylesheet" href="static/style/media.css"> -->
+    
+</head>
+
+
+<body>
+  <div class="all">
+
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+<!-- Меню -->
+<header class="header">
+
+  <div class="logo_menu">
+      <img src="static/img/logo_menu.PNG" alt="лого меню">
+  </div>
+  
+  <div class="menu">
+      <ul>
+  
+      <a href="index.html">ГЛАВНАЯ</a>
+      <a href="page2.html">КАТАЛОГ</a>
+      <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+      <a href="page4.html" class="active">РАСЧЕТ СТОИМОСТИ</a>
+      <a href="page5.html">КОНТАКТЫ</a>      
+  
+  </ul>
+  
+  </div>
+  
+  <!-- Иконка бургерменю -->
+  <div class="burger">
+      <span></span>
+  </div>
+  
+  </header>
+  
+  <!-- Скрипт для бургерменю -->
+  <script>
+      document.querySelector('.burger').addEventListener('click', function() {
+          this.classList.toggle('active');
+          document.querySelector('.menu').classList.toggle('open');
+      })
+  </script>
+
+
+
+<div class="wrapper">
+
+    <div class="form">
+        <form action="#" id="form" class="form_body">
+            <h1 class="form_title">Заявка на расчет стоимости</h1>
+            <div class="form_item">
+                <label for="formName" class="form_label">Имя*:</label>
+                <input id="formName" type="text" name="name" class="form_input _req">
+            </div>
+
+            <div class="form_item">
+                <label for="formEmail" class="form_label">Email*:</label>
+                <input id="formEmail" type="text" name="email" class="form_input _req _email">
+            </div>
+
+            <div class="form_item">
+                <label for="formMessage" class="form_label">Сообщение:</label>
+                <textarea name="message" id="formMessage" class="form_input"></textarea>
+            </div>
+
+            <div class="form_item">
+                <div class="form_label">Возраст:</div>
+                <select name="age" class="select">
+                    <option value="от 18 до 25"selected>Молодой</option>
+                    <option value="от 25 до 45"selected>Старый</option>
+                    <option value="от 45"selected>Супер стар</option>
+                </select>
+            </div>
+
+            <div class="form_item">
+                <div class="checkbox">
+                    <input id="formAgreement" type="checkbox" name="agreement" class="checkbox_input _req">
+                    <label for="formAgreement" class="checkbox_label"><span>Я даю свое <a href="#">Согласие на обработку персональных данных</a></span></label>
+                </div>
+            </div>
+
+            <button type="submit" class="form_button">Отправить</button>
+        </form>
+    </div>
+
+</div>
+
+
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+    </div>
+  
+    </div>
+
+    <script src="page4.js"></script>
+  </body>
+  
+  
+  </html>
